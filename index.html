@@ -3,144 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fabio Marques</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <title>Fabio Marques - Star Wars Terminal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Share Tech Mono', monospace;
     }
+
     body {
-      font-family: 'Outfit', sans-serif;
-      display: flex;
-      height: 100vh;
-      color: #fff;
-      overflow: hidden;
+      background-color: #000;
+      color: #00ff88;
+      line-height: 1.5;
+      padding: 20px;
+      overflow-x: hidden;
     }
-    .background {
-      flex: 2;
-      background: url('https://photos.fife.usercontent.google.com/pw/AP1GczMcqbwJJoGQGQew1FdOrfZTiY1mqSKFGHKXX3JufGeXBXAlMeN0ulAKEA=w1276-h957-s-no-gm?authuser=0') center center/cover no-repeat;
-      filter: brightness(70%);
-      animation: fadeIn 2s ease-in-out;
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 136, 0.03),
+        rgba(0, 255, 136, 0.03) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      z-index: 0;
+      pointer-events: none;
     }
-    .content {
-      flex: 1;
-      background: #0f0f0f;
-      padding: 2rem;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      animation: slideIn 1s ease forwards;
-      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.4);
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+      border: 2px solid #00ff88;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 10px #00ff88;
     }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @keyframes slideIn {
-      from {transform: translateX(100px); opacity: 0;}
-      to {transform: translateX(0); opacity: 1;}
-    }
+
     .profile-pic {
       width: 150px;
       height: 150px;
-      border-radius: 16px;
+      border: 2px solid #00ff88;
+      float: right;
+      margin-left: 20px;
       object-fit: cover;
-      border: 3px solid #00BFFF;
-      box-shadow: 0 0 10px rgba(0,191,255,0.4);
-    }
-    h1 {
-      font-size: 2rem;
-      margin-top: 1rem;
-      font-weight: 600;
-      color: #00BFFF;
-    }
-    .section {
-      border-top: 1px solid #444;
-      padding-top: 1rem;
-    }
-    .section h2 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-      color: #00BFFF;
-    }
-    .section p {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-bottom: 0.5rem;
-    }
-    .section a {
-      display: inline-block;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-      color: #aaa;
-      text-decoration: none;
-      background-color: #1a1a1a;
-      padding: 0.4rem 0.7rem;
-      border-radius: 6px;
-      font-size: 0.88rem;
-      transition: all 0.2s ease;
-    }
-    .section a:hover {
-      background-color: #00BFFF;
-      color: #000;
     }
 
-    /* Scrollbar styling */
-    .content::-webkit-scrollbar {
-      width: 6px;
+    h1 {
+      font-size: 2rem;
+      color: #00ffaa;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ffaa;
     }
-    .content::-webkit-scrollbar-thumb {
-      background-color: #555;
-      border-radius: 10px;
+
+    h2 {
+      color: #00ffcc;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      border-bottom: 1px dashed #00ff88;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #00ff88;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a:hover {
+      text-shadow: 0 0 10px #00ff88;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    @media(max-width: 600px) {
+      .profile-pic {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="background"></div>
-  <div class="content">
+  <div class="container">
     <img src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0" alt="Fabio Marques" class="profile-pic" />
-    <h1>Fabio Marques</h1>
+    <h1>FABIO MARQUES</h1>
+    <p>Terminal access granted. Welcome, Commander. This station contains encrypted data on Fabio Marques — explorer, technologist, innovation agent, and known comics operative.</p>
 
     <div class="section">
       <h2>Personal Profile</h2>
-      <p>Curious explorer of ideas, cultures, and stories. A journey of growth and inspiration:</p>
+      <p>Identity trace confirmed. Personal signal relayed via old Earth network:</p>
       <a href="https://facebook.com/fabio.marques" target="_blank">Facebook</a>
     </div>
 
     <div class="section">
       <h2>World Traveller</h2>
-      <p>Exploring the world, one country at a time. My passport tells stories of wonder and learning:</p>
-      <a href="https://instagram.com/farm1974world" target="_blank">Instagram</a>
-      <a href="https://nomadmania.com/profile/40971/" target="_blank">NomadMania</a>
+      <p>Coordinates logged across multiple planetary systems. Public transmissions available at:</p>
+      <a href="https://instagram.com/farm1974world" target="_blank">Instagram</a><br/>
+      <a href="https://nomadmania.com/profile/40971/" target="_blank">NomadMania</a><br/>
       <a href="https://www.tripadvisor.com/Profile/farm1974world" target="_blank">TripAdvisor</a>
     </div>
 
     <div class="section">
       <h2>Professional Profiles</h2>
-      <p>Technology, leadership, agile practices, and continuous innovation—my professional playground:</p>
-      <a href="https://linkedin.com/in/farm1974" target="_blank">LinkedIn</a>
-      <a href="https://linktr.ee/farm1974" target="_blank">Linktree</a>
-      <a href="https://www.scrumalliance.org/members/280956" target="_blank">Scrum Alliance</a>
-      <a href="https://www.credly.com/users/fabiomarques" target="_blank">Credly</a>
+      <p>Current deployment in technology and agile missions. Credentials stored in databanks:</p>
+      <a href="https://linkedin.com/in/farm1974" target="_blank">LinkedIn</a><br/>
+      <a href="https://linktr.ee/farm1974" target="_blank">Linktree</a><br/>
+      <a href="https://www.scrumalliance.org/members/280956" target="_blank">Scrum Alliance</a><br/>
+      <a href="https://www.credly.com/users/fabiomarques" target="_blank">Credly</a><br/>
       <a href="https://coursera.org/user/fabiomarques1974" target="_blank">Coursera</a>
     </div>
 
     <div class="section">
       <h2>Innovation Stuff</h2>
-      <p>Where code meets cloud, and ideas become real. I build, share, and even patent bold tech:</p>
-      <a href="https://github.com/FabioMarques1974" target="_blank">GitHub</a>
-      <a href="https://developers.google.com/profile/u/farm1974" target="_blank">Google Dev</a>
-      <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">Cloud Boost</a>
-      <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">Patent</a>
+      <p>Data logs from R&D sectors. Includes code archives, cloud mission records, and registered invention:</p>
+      <a href="https://github.com/FabioMarques1974" target="_blank">GitHub</a><br/>
+      <a href="https://developers.google.com/profile/u/farm1974" target="_blank">Google Dev Profile</a><br/>
+      <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">Google Cloud Boost</a><br/>
+      <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">International Patent</a>
     </div>
 
     <div class="section">
       <h2>Comics Geek</h2>
-      <p>From Krypton to Metropolis, comics shaped my imagination. Here's my homage to Brazilian Superman fandom:</p>
-      <a href="http://www.super-homem.com/" target="_blank">Super-Homem Fan Site</a>
+      <p>Encrypted archives of a Kryptonian historian. Access fan site transmissions:</p>
+      <a href="http://www.super-homem.com/" target="_blank">Super-Homem Database</a>
     </div>
   </div>
 </body>
