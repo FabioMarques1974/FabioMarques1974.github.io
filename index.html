@@ -3,27 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Cyberpunk Links</title>
+  <title>Fabio Marques</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       padding: 4rem 1rem;
-      font-family: 'Share Tech Mono', monospace;
-      background: radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
-      color: #39ff14;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+      color: #4a4a4a;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    h1, h2 {
-      color: #00ffe1;
-      text-shadow: 0 0 8px #00ffe1;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #880e4f;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #ad1457;
       margin-bottom: 1rem;
+      margin-top: 2rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 0.5s;
     }
 
     .links {
@@ -32,27 +51,29 @@
       justify-content: center;
       gap: 1rem;
       max-width: 900px;
-      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 1s;
     }
 
     .link {
       text-decoration: none;
-      color: #39ff14;
-      background: rgba(0, 255, 50, 0.08);
-      border: 1px solid #39ff14;
-      padding: 0.8rem 1.4rem;
-      border-radius: 8px;
+      color: #fff;
+      background-color: #ec407a;
+      padding: 0.9rem 1.4rem;
+      border-radius: 40px;
       display: flex;
       align-items: center;
       gap: 0.6rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 8px #39ff14;
+      font-size: 1rem;
+      font-weight: 500;
+      box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease;
     }
 
     .link:hover {
-      background: rgba(0, 255, 50, 0.2);
-      transform: scale(1.07);
-      box-shadow: 0 0 12px #39ff14;
+      background-color: #d81b60;
+      transform: scale(1.05);
     }
 
     .link i, .link img {
@@ -61,28 +82,69 @@
     }
 
     .link img {
-      filter: brightness(0) invert(1);
+      border-radius: 50%;
+      object-fit: contain;
     }
 
     hr {
       width: 80%;
       border: none;
-      border-top: 1px dashed #555;
+      border-top: 1px solid #f8bbd0;
       margin: 2rem auto;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    #greeting-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #fce4ec, #f8bbd0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeOut 2s ease-in-out 2s forwards;
+    }
+
+    #greeting-overlay h1 {
+      font-size: 3rem;
+      color: #880e4f;
+      font-weight: 300;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   </style>
 </head>
 <body>
+  <div id="greeting-overlay">
+    <h1>Hello, Visitor</h1>
+  </div>
 
-  <h1>CONNECT NODE: FABIO MARQUES</h1>
+  <h1>Fabio Marques</h1>
   <hr>
-  <h2>PERSONAL PROFILES</h2>
+
+  <h2>Personal Profiles</h2>
   <div class="links">
     <a class="link" href="https://facebook.com/fabio.marques" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
     <a class="link" href="https://instagram.com/farm1974world" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
   </div>
 
-  <h2>PROFESSIONAL LINKS</h2>
+  <h2>Professional Links</h2>
   <div class="links">
     <a class="link" href="https://linkedin.com/in/farm1974" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     <a class="link" href="https://github.com/FabioMarques1974" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -97,7 +159,7 @@
     </a>
   </div>
 
-  <h2>SUPER-HOMEM.COM NODES</h2>
+  <h2>Super-Homem.com Nodes</h2>
   <div class="links">
     <a class="link" href="https://youtube.com/@FabioMarques1974" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
     <a class="link" href="https://twitter.com/superhomemcom" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
@@ -105,5 +167,15 @@
     <a class="link" href="https://instagram.com/superhomemcom" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
   </div>
 
+  <audio id="hover-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_126d282e1d.mp3?filename=interface-click-124253.mp3" preload="auto"></audio>
+  <script>
+    const sound = document.getElementById('hover-sound');
+    document.querySelectorAll('.link').forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play();
+      });
+    });
+  </script>
 </body>
 </html>
