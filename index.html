@@ -2,180 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fabio Marques</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
-
     * {
-      box-sizing: border-box;
-    }
-
-    body {
       margin: 0;
-      padding: 4rem 1rem;
-      font-family: 'Nunito', sans-serif;
-      background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
-      color: #4a4a4a;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      color: #fff;
+    }
+    .background {
+      flex: 2;
+      background: url('https://photos.fife.usercontent.google.com/pw/AP1GczMcqbwJJoGQGQew1FdOrfZTiY1mqSKFGHKXX3JufGeXBXAlMeN0ulAKEA=w1276-h957-s-no-gm?authuser=0') center center/cover no-repeat;
+      position: relative;
+    }
+    .content {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      overflow-x: hidden;
+      gap: 2rem;
+      overflow-y: auto;
     }
-
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
     h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #880e4f;
+      font-size: 1.8rem;
+      margin-top: 1rem;
+    }
+    .section {
+      margin-bottom: 1.5rem;
+    }
+    .section h2 {
+      font-size: 1.2rem;
       margin-bottom: 0.5rem;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
+      color: #00BFFF;
     }
-
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: #ad1457;
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 0.5s;
+    .section p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
     }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      max-width: 900px;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 1s;
-    }
-
-    .link {
+    .section a {
+      display: block;
+      color: #ddd;
       text-decoration: none;
-      color: #fff;
-      background-color: #ec407a;
-      padding: 0.9rem 1.4rem;
-      border-radius: 40px;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 1rem;
-      font-weight: 500;
-      box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
-      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 0.9rem;
     }
-
-    .link:hover {
-      background-color: #d81b60;
-      transform: scale(1.05);
-    }
-
-    .link i, .link img {
-      width: 20px;
-      height: 20px;
-    }
-
-    .link img {
-      border-radius: 50%;
-      object-fit: contain;
-    }
-
-    hr {
-      width: 80%;
-      border: none;
-      border-top: 1px solid #f8bbd0;
-      margin: 2rem auto;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 0.8s;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    #greeting-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(to bottom right, #fce4ec, #f8bbd0);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      animation: fadeOut 2s ease-in-out 2s forwards;
-    }
-
-    #greeting-overlay h1 {
-      font-size: 3rem;
-      color: #880e4f;
-      font-weight: 300;
-    }
-
-    @keyframes fadeOut {
-      to {
-        opacity: 0;
-        visibility: hidden;
-      }
+    .section a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div id="greeting-overlay">
-    <h1>Hello, Visitor</h1>
+  <div class="background"></div>
+  <div class="content">
+    <img src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0" alt="Fabio Marques" class="profile-pic" />
+    <h1>Fabio Marques</h1>
+
+    <div class="section">
+      <h2>Personal Profile</h2>
+      <p>Welcome! I'm Fabio Marques, a curious explorer of ideas and places, blending personal growth and cultural discovery. Connect with me here:</p>
+      <a href="https://facebook.com/fabio.marques" target="_blank">Facebook</a>
+    </div>
+
+    <div class="section">
+      <h2>World Traveller</h2>
+      <p>Passionate about exploring new cultures and landscapes. I've traveled across continents and documented my experiences:</p>
+      <a href="https://instagram.com/farm1974world" target="_blank">Instagram</a>
+      <a href="https://nomadmania.com/profile/40971/" target="_blank">NomadMania</a>
+      <a href="https://www.tripadvisor.com/Profile/farm1974world" target="_blank">TripAdvisor</a>
+    </div>
+
+    <div class="section">
+      <h2>Professional Profiles</h2>
+      <p>I work at the intersection of technology, agility, and innovation, continuously learning and sharing knowledge:</p>
+      <a href="https://linkedin.com/in/farm1974" target="_blank">LinkedIn</a>
+      <a href="https://linktr.ee/farm1974" target="_blank">Linktree</a>
+      <a href="https://www.scrumalliance.org/members/280956" target="_blank">Scrum Alliance</a>
+      <a href="https://www.credly.com/users/fabiomarques" target="_blank">Credly Certifications</a>
+      <a href="https://coursera.org/user/fabiomarques1974" target="_blank">Coursera</a>
+    </div>
+
+    <div class="section">
+      <h2>Innovation Stuff</h2>
+      <p>Exploring the future through code, cloud platforms, and new ideas. I also hold a patent in a field I'm passionate about:</p>
+      <a href="https://github.com/FabioMarques1974" target="_blank">GitHub</a>
+      <a href="https://developers.google.com/profile/u/farm1974" target="_blank">Google Developer Profile</a>
+      <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">Google Cloud Skills Boost</a>
+      <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">My Patent</a>
+    </div>
+
+    <div class="section">
+      <h2>Comics Geek</h2>
+      <p>Longtime fan of classic superhero stories. I run a nostalgic fan site dedicated to Superman's legacy in Brazil:</p>
+      <a href="http://www.super-homem.com/" target="_blank">Super-Homem Fan Site</a>
+    </div>
   </div>
-
-  <h1>Fabio Marques</h1>
-  <hr>
-
-  <h2>Personal Profiles</h2>
-  <div class="links">
-    <a class="link" href="https://facebook.com/fabio.marques" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-    <a class="link" href="https://instagram.com/farm1974world" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-  </div>
-
-  <h2>Professional Links</h2>
-  <div class="links">
-    <a class="link" href="https://linkedin.com/in/farm1974" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a class="link" href="https://github.com/FabioMarques1974" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a class="link" href="https://linktr.ee/farm1974" target="_blank">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQANU_hoqsxJjL-6t8-ArnxmUhZ1Q-n3XY6YA&s" alt="Linktree" /> linktr.ee
-    </a>
-    <a class="link" href="https://www.credly.com/users/fabiomarques" target="_blank">
-      <img src="https://img.icons8.com/p1em/512/FFFFFF/credly.png" alt="Credly" /> Credly
-    </a>
-    <a class="link" href="https://coursera.org/user/fabiomarques1974" target="_blank">
-      <img src="https://images.freeimages.com/fic/images/icons/2779/simple_icons/4096/coursera.png?h=350" alt="Coursera" /> Coursera
-    </a>
-  </div>
-
-  <h2>Super-Homem.com Nodes</h2>
-  <div class="links">
-    <a class="link" href="https://youtube.com/@FabioMarques1974" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-    <a class="link" href="https://twitter.com/superhomemcom" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-    <a class="link" href="https://facebook.com/superhomemcom" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-    <a class="link" href="https://instagram.com/superhomemcom" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-  </div>
-
-  <audio id="hover-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_126d282e1d.mp3?filename=interface-click-124253.mp3" preload="auto"></audio>
-  <script>
-    const sound = document.getElementById('hover-sound');
-    document.querySelectorAll('.link').forEach(link => {
-      link.addEventListener('mouseenter', () => {
-        sound.currentTime = 0;
-        sound.play();
-      });
-    });
-  </script>
 </body>
 </html>
