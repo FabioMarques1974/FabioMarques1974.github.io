@@ -2,177 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fabio Marques - Retro Future Terminal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabio Marques</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      background: radial-gradient(circle at center, #2a2f45 0%, #111 100%);
-      color: #fefefe;
-      font-family: 'Orbitron', sans-serif;
-      padding: 20px;
       margin: 0;
-    }
-
-    .screen {
-      max-width: 960px;
-      margin: auto;
-      background: #151a25;
-      border: 5px solid #36f2a1;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 0 25px #36f2a1;
-      position: relative;
-    }
-
-    .glow-border::before {
-      content: "";
-      position: absolute;
-      top: -10px;
-      left: -10px;
-      width: calc(100% + 20px);
-      height: calc(100% + 20px);
-      border: 2px dashed #36f2a1;
-      border-radius: 16px;
-      opacity: 0.4;
-      animation: flicker 3s infinite ease-in-out;
-    }
-
-    @keyframes flicker {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 0.6; }
-    }
-
-    .title {
-      font-size: 2.2rem;
-      color: #36f2a1;
-      text-align: center;
-      margin-bottom: 15px;
-      text-shadow: 0 0 10px #36f2a1;
-    }
-
-    .profile-pic {
-      float: right;
-      margin-left: 20px;
-      width: 160px;
-      height: 160px;
-      border: 3px solid #36f2a1;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    h2 {
-      color: #ffe27a;
-      margin-top: 30px;
-      border-bottom: 1px dotted #ffe27a;
-      padding-bottom: 5px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-top: 10px;
-    }
-
-    a {
-      color: #36f2a1;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #ffe27a;
-    }
-
-    .section {
-      margin-top: 20px;
-    }
-
-    .lights {
-      margin-top: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      height: 100vh;
       display: flex;
-      gap: 12px;
+      flex-direction: row;
     }
-
-    .light {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #36f2a1;
-      box-shadow: 0 0 8px #36f2a1;
-      animation: blink 2s infinite alternate;
+    .left {
+      width: 40%;
+      background-color: #fff;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-right: 1px solid #ddd;
     }
-
-    .light:nth-child(2) {
-      background: #ffe27a;
-      box-shadow: 0 0 8px #ffe27a;
-      animation-delay: 0.5s;
+    .left img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
-
-    .light:nth-child(3) {
-      background: #ff6f61;
-      box-shadow: 0 0 8px #ff6f61;
-      animation-delay: 1s;
+    .left h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
     }
-
-    @keyframes blink {
-      0% { opacity: 1; }
-      100% { opacity: 0.4; }
+    .description {
+      font-size: 1em;
+      color: #555;
+      max-width: 90%;
     }
-
-    @media(max-width: 600px) {
-      .profile-pic {
-        float: none;
-        display: block;
-        margin: 20px auto;
-      }
+    .right {
+      width: 60%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: auto;
+    }
+    section {
+      max-width: 600px;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    section blockquote {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    section a {
+      display: block;
+      margin: 5px 0;
+      color: #0066cc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    section a:hover {
+      color: #003366;
     }
   </style>
 </head>
 <body>
-  <div class="screen glow-border">
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0" class="profile-pic" alt="Fabio Marques">
-    <h1 class="title">FABIO MARQUES</h1>
-    <div class="lights">
-      <div class="light"></div>
-      <div class="light"></div>
-      <div class="light"></div>
+  <div class="left">
+    <img src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0" alt="Fabio Marques" />
+    <h1>Fabio Marques</h1>
+    <div class="description">
+      <!-- You can add a personal description here -->
+      <p>Engineer, traveler, thinker, and lifelong learner. Passionate about technology, innovation, and storytelling.</p>
     </div>
-    <p>
-      Transmission received from Earth Sector FABIO-1974. Subject identified as a traveler, innovation operative, and cultural archivist. Interface initialized.
-    </p>
+  </div>
 
-    <div class="section">
-      <h2>Personal Profile</h2>
+  <div class="right">
+    <section>
+      <h2>PERSONAL PROFILE</h2>
+      <blockquote>"The privilege of a lifetime is being who you are."<br>– Joseph Campbell</blockquote>
       <a href="https://facebook.com/fabio.marques" target="_blank">Facebook</a>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>World Traveller</h2>
-      <a href="https://instagram.com/farm1974world" target="_blank">Instagram</a><br/>
-      <a href="https://nomadmania.com/profile/40971/" target="_blank">NomadMania</a><br/>
+    <section>
+      <h2>WORLD TRAVELLER</h2>
+      <blockquote>“Navegar é preciso; viver não é preciso.“<br>– Fernando Pessoa</blockquote>
+      <a href="https://instagram.com/farm1974world" target="_blank">Instagram</a>
+      <a href="https://nomadmania.com/profile/40971/" target="_blank">NomadMania</a>
       <a href="https://www.tripadvisor.com/Profile/farm1974world" target="_blank">TripAdvisor</a>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Professional Profiles</h2>
-      <a href="https://linkedin.com/in/farm1974" target="_blank">LinkedIn</a><br/>
-      <a href="https://linktr.ee/farm1974" target="_blank">Linktree</a><br/>
-      <a href="https://www.scrumalliance.org/members/280956" target="_blank">Scrum Alliance</a><br/>
-      <a href="https://www.credly.com/users/fabiomarques" target="_blank">Credly</a><br/>
+    <section>
+      <h2>PROFESSIONAL PROFILES</h2>
+      <blockquote>"Believe you can and you're halfway there."<br>– Theodore Roosevelt</blockquote>
+      <a href="https://linkedin.com/in/farm1974" target="_blank">LinkedIn</a>
+      <a href="https://linktr.ee/farm1974" target="_blank">Linktree</a>
+      <a href="https://www.scrumalliance.org/members/280956" target="_blank">Scrum Alliance</a>
+      <a href="https://www.credly.com/users/fabiomarques" target="_blank">Credly</a>
       <a href="https://coursera.org/user/fabiomarques1974" target="_blank">Coursera</a>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Innovation Stuff</h2>
-      <a href="https://github.com/FabioMarques1974" target="_blank">GitHub</a><br/>
-      <a href="https://developers.google.com/profile/u/farm1974" target="_blank">Google Dev Profile</a><br/>
-      <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">Google Cloud Boost</a><br/>
-      <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">International Patent</a>
-    </div>
+    <section>
+      <h2>INNOVATION STUFF</h2>
+      <blockquote>«Το μυστικό της αλλαγής είναι να επικεντρώσεις όλη σου την ενέργεια, όχι στην καταπολέμηση του παλιού, αλλά στην οικοδόμηση πάνω στο νέο».<br>– Socrates</blockquote>
+      <a href="https://github.com/FabioMarques1974" target="_blank">GitHub</a>
+      <a href="https://developers.google.com/profile/u/farm1974" target="_blank">Google Developers</a>
+      <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">Google Cloud Skills</a>
+      <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">Patent WO2023200378A1</a>
+    </section>
 
-    <div class="section">
-      <h2>Comics Geek</h2>
-      <a href="http://www.super-homem.com/" target="_blank">Super-Homem Database</a>
-    </div>
+    <section>
+      <h2>COMICS GEEK</h2>
+      <blockquote>"I look what Siegel and Shuster did, Superman is gonna live forever!"<br>– Jack Kirby</blockquote>
+      <a href="http://www.super-homem.com/" target="_blank">Super-Homem</a>
+    </section>
   </div>
 </body>
 </html>
