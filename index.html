@@ -16,14 +16,21 @@
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, #f0f2f5, #e6ebf1);
       color: #333;
-      display: flex;
       min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
     }
 
     .left {
       width: 40%;
       background-color: #ffffff;
-      padding: 60px 40px;
+      padding: 40px 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,32 +38,32 @@
     }
 
     .left img {
-      width: 300px;
-      height: 300px;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     .left h1 {
-      font-size: 2.2em;
+      font-size: 2em;
       font-weight: 800;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-align: center;
     }
 
     .description {
-      font-size: 1em;
+      font-size: 0.95em;
       color: #555;
       text-align: center;
-      line-height: 1.6;
+      line-height: 1.5;
       max-width: 90%;
     }
 
     .right {
       width: 60%;
-      padding: 40px;
+      padding: 30px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -66,28 +73,28 @@
     section {
       background: #ffffff;
       border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
       max-width: 600px;
       width: 100%;
-      padding: 30px 20px;
-      margin-bottom: 30px;
+      padding: 20px 16px;
+      margin-bottom: 20px;
       text-align: center;
     }
 
     section h2 {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin-bottom: 10px;
     }
 
     section blockquote {
       font-style: italic;
-      color: #777;
-      margin-bottom: 20px;
+      color: #666;
+      margin-bottom: 15px;
     }
 
     section a {
       display: inline-block;
-      margin: 6px 10px;
+      margin: 5px 8px;
       color: #0056b3;
       font-weight: 600;
       text-decoration: none;
@@ -101,58 +108,59 @@
   </style>
 </head>
 <body>
-  <div class="left">
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0" alt="Fabio Marques" />
-    <h1>fabio marques</h1>
-    <div class="description">
-      <p>gen-x, father of gen-z<br>
-         computer/comics geek and cinephile<br>
-         brazilian by birth, portuguese/italian by blood, visited 24 countries</p>
-      <br>
-      <p>atheist, skeptical thinker, lifelong learner<br>
-         passionate about science, innovation, and storytelling<br>
-         raised by Darwin, Campbell, Sagan, Kirby, Moore, Lennon,<br>
-         Tanenbaum, Kernighan and Ritchie
-      </p>
-      <br>
-      <p>computer scientist, IT specialist, development leader</p>
+  <div class="container">
+    <div class="left">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0" alt="Fabio Marques" />
+      <h1>fabio marques</h1>
+      <div class="description">
+        <p>gen-x, father of gen-z<br>
+           computer/comics geek and cinephile<br>
+           brazilian by birth, portuguese/italian by blood, visited 24 countries</p>
+        <br>
+        <p>atheist, skeptical thinker, lifelong learner<br>
+           passionate about science, innovation, and storytelling<br>
+           raised by Darwin, Campbell, Sagan, Kirby, Moore, Lennon,<br>
+           Tanenbaum, Kernighan and Ritchie</p>
+        <br>
+        <p>computer scientist, IT specialist, development leader</p>
+      </div>
     </div>
-  </div>
 
-  <div class="right">
-    <section>
-      <blockquote>"The privilege of a lifetime is being who you are."<br>– Joseph Campbell</blockquote>
-      <a href="https://facebook.com/fabio.marques" target="_blank">facebook</a>
-    </section>
+    <div class="right">
+      <section>
+        <blockquote>"The privilege of a lifetime is being who you are."<br>– Joseph Campbell</blockquote>
+        <a href="https://facebook.com/fabio.marques" target="_blank">facebook</a>
+      </section>
 
-    <section>
-      <blockquote>“Navegar é preciso; viver não é preciso.“<br>– Fernando Pessoa</blockquote>
-      <a href="https://instagram.com/farm1974world" target="_blank">instagram</a>
-      <a href="https://nomadmania.com/profile/40971/" target="_blank">nomadmania</a>
-      <a href="https://www.tripadvisor.com/Profile/farm1974world" target="_blank">tripadvisor</a>
-    </section>
+      <section>
+        <blockquote>“Navegar é preciso; viver não é preciso.“<br>– Fernando Pessoa</blockquote>
+        <a href="https://instagram.com/farm1974world" target="_blank">instagram</a>
+        <a href="https://nomadmania.com/profile/40971/" target="_blank">nomadmania</a>
+        <a href="https://www.tripadvisor.com/Profile/farm1974world" target="_blank">tripadvisor</a>
+      </section>
 
-    <section>
-      <blockquote>"Believe you can and you're halfway there."<br>– Theodore Roosevelt</blockquote>
-      <a href="https://linkedin.com/in/farm1974" target="_blank">linkedin</a>
-      <a href="https://linktr.ee/farm1974" target="_blank">linktree</a>
-      <a href="https://www.scrumalliance.org/members/280956" target="_blank">scrum alliance</a>
-      <a href="https://www.credly.com/users/fabiomarques" target="_blank">credly</a>
-      <a href="https://coursera.org/user/fabiomarques1974" target="_blank">coursera</a>
-    </section>
+      <section>
+        <blockquote>"Believe you can and you're halfway there."<br>– Theodore Roosevelt</blockquote>
+        <a href="https://linkedin.com/in/farm1974" target="_blank">linkedin</a>
+        <a href="https://linktr.ee/farm1974" target="_blank">linktree</a>
+        <a href="https://www.scrumalliance.org/members/280956" target="_blank">scrum alliance</a>
+        <a href="https://www.credly.com/users/fabiomarques" target="_blank">credly</a>
+        <a href="https://coursera.org/user/fabiomarques1974" target="_blank">coursera</a>
+      </section>
 
-    <section>
-      <blockquote>"Those who can imagine anything, can create the impossible."<br>– Alan Turing</blockquote>
-      <a href="https://github.com/FabioMarques1974" target="_blank">github</a>
-      <a href="https://developers.google.com/profile/u/farm1974" target="_blank">google developer</a>
-      <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">google cloud skills</a>
-      <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">patent WO2023200378A1</a>
-    </section>
+      <section>
+        <blockquote>"Those who can imagine anything, can create the impossible."<br>– Alan Turing</blockquote>
+        <a href="https://github.com/FabioMarques1974" target="_blank">github</a>
+        <a href="https://developers.google.com/profile/u/farm1974" target="_blank">google developer</a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">google cloud skills</a>
+        <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">patent WO2023200378A1</a>
+      </section>
 
-    <section>
-      <blockquote>"I look what Siegel and Shuster did, Superman is gonna live forever!"<br>– Jack Kirby</blockquote>
-      <a href="http://www.super-homem.com/" target="_blank">www.super-homem.com</a>
-    </section>
+      <section>
+        <blockquote>"I look what Siegel and Shuster did, Superman is gonna live forever!"<br>– Jack Kirby</blockquote>
+        <a href="http://www.super-homem.com/" target="_blank">www.super-homem.com</a>
+      </section>
+    </div>
   </div>
 </body>
 </html>
