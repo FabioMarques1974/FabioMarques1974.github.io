@@ -121,7 +121,54 @@
       color: #001f4d;
       text-decoration: underline;
     }
-    
+
+    /* Responsive for smaller screens */
+    @media (max-width: 900px) {
+      .container {
+        height: auto;
+        min-height: 100vh;
+      }
+      .left, .right {
+        padding: 20px 15px;
+      }
+      .left {
+        width: 45%;
+      }
+      .right {
+        width: 55%;
+      }
+      .profile-pic {
+        width: 250px;
+        height: 250px;
+      }
+      section {
+        max-width: 100%;
+      }
+    }
+
+    /* Portrait phones: stack right under left */
+    @media (max-width: 600px) and (orientation: portrait) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+      .left, .right {
+        width: 100%;
+        padding: 20px 15px;
+      }
+      .left {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+      }
+      .right {
+        order: 2;
+      }
+    }
   </style>
 </head>
 <body>
@@ -141,7 +188,7 @@
         <br>
         <p>computer scientist, IT specialist, development leader</p>
         <br>
-        <p></p>brazilian by birth, portuguese/italian by blood, visited 24 countries</p>       
+        <p>brazilian by birth, portuguese/italian by blood, visited 24 countries</p>       
         <div class="flags">
           <img src="https://flagcdn.com/no.svg" alt="Norway">
           <img src="https://flagcdn.com/fi.svg" alt="Finland">
@@ -155,7 +202,8 @@
           <img src="https://flagcdn.com/it.svg" alt="Italy">
           <img src="https://flagcdn.com/lu.svg" alt="Luxembourg">
           <img src="https://flagcdn.com/nl.svg" alt="Netherlands">
-        </div><div class="flags">
+        </div>
+        <div class="flags">
           <img src="https://flagcdn.com/ch.svg" alt="Switzerland">
           <img src="https://flagcdn.com/va.svg" alt="Vatican">
           <img src="https://flagcdn.com/us.svg" alt="USA">
@@ -200,11 +248,6 @@
         <a href="https://developers.google.com/profile/u/farm1974" target="_blank">google developer</a>
         <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">google cloud skills</a>
         <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">patent WO2023200378A1</a>
-      </section>
-
-      <section>
-        <blockquote>"I look what Siegel and Shuster did, Superman is gonna live forever!"<br>– Jack Kirby</blockquote>
-        <a href="http://www.super-homem.com/" target="_blank">www.super-homem.com</a>
       </section>
     </div>
   </div>
