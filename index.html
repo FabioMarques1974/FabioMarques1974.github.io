@@ -122,42 +122,33 @@
       text-decoration: underline;
     }
 
-    /* Responsive layout for narrow screens (portrait mobile) */
-    @media (max-width: 768px) and (orientation: portrait) {
-      .container {
-        flex-direction: column;
-        height: auto;
-      }
+@media (max-width: 768px), (orientation: portrait) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
 
-      .left, .right {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-      }
+  .left, .right {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
 
-      .left {
-        padding: 30px 20px;
-      }
+  .left {
+    padding: 30px 20px;
+  }
 
-      .profile-pic {
-        width: 250px;
-        height: 250px;
-      }
+  .right {
+    padding: 20px 16px;
+    overflow-y: visible;
+  }
 
-      .right {
-        padding: 20px 15px;
-      }
-    }
-
-    /* Optional: improve display on narrow landscape phones */
-    @media (max-width: 768px) and (orientation: landscape) {
-      .profile-pic {
-        width: 300px;
-        height: 300px;
-      }
-    }
-  
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+}
+    
   </style>
 </head>
 <body>
