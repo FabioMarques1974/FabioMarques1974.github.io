@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fabio Marques</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -78,15 +78,14 @@
       justify-content: center;
       gap: 6px;
     }
-
+    
     .flags img {
       width: 20px;
       height: 15px;
       object-fit: cover;
       border-radius: 2px;
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 2px rgba(0,0,0,0.15);
     }
-
     section {
       background: #ffffff;
       border-radius: 16px;
@@ -122,143 +121,90 @@
       color: #001f4d;
       text-decoration: underline;
     }
-
-    /* Responsive styles */
-
-    /* Portrait phones: stack right under left */
-    @media (max-width: 600px) and (orientation: portrait) {
-      .container {
-        flex-direction: column;
-        height: auto;
-      }
-      .left,
-      .right {
-        width: 100%;
-        padding: 20px 15px;
-      }
-      .left {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        margin-bottom: 20px;
-      }
-      .profile-pic {
-        width: 200px;
-        height: 200px;
-      }
-      .right {
-        order: 2;
-      }
-    }
-
-    /* Landscape phones: stack vertically too */
-    @media (max-width: 900px) and (orientation: landscape) {
-      .container {
-        flex-direction: column;
-        height: auto;
-      }
-      .left,
-      .right {
-        width: 100%;
-        padding: 20px 15px;
-      }
-      .left {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        margin-bottom: 20px;
-      }
-      .profile-pic {
-        width: 250px;
-        height: 250px;
-      }
-      .right {
-        order: 2;
-      }
-    }
+    
   </style>
 </head>
 <body>
   <div class="container">
     <div class="left">
-      <img
-        class="profile-pic"
-        src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0"
-        alt="Fabio Marques"
-      />
+      <img class="profile-pic" src="https://lh3.googleusercontent.com/pw/AP1GczNx8XOgqDzG7jdNsHazOwCLcDQH7Tezay-pJjq6qwMZyBDEeyBsQitOgB_Exyf8MQ0Gnu2oqsWc5GfYAWwNA98aE0gUt5SSitV0eo536oX1E5GufwMTaOKObaoEi4wM-NTIwZDJsGucIk_7LUggXO9Shw=w957-h957-s-no-gm?authuser=0" alt="Fabio Marques" />
       <h1>fabio marques</h1>
       <div class="description">
-        <p>
-          gen-x, father of gen-z<br />
-          computer/comics geek and cinephile
+        <p>gen-x, father of gen-z<br>
+           computer/comics geek and cinephile
         </p>
-        <br />
-        <p>
-          atheist, skeptical thinker, lifelong learner<br />
-          passionate about science, innovation, and storytelling<br />
-          raised by Darwin, Campbell, Sagan, Kirby, Moore, Lennon,<br />
-          Pessoa, Tanenbaum, Kernighan and Ritchie
-        </p>
-        <br />
+        <br>
+        <p>atheist, skeptical thinker, lifelong learner<br>
+           passionate about science, innovation, and storytelling<br>
+           raised by Darwin, Campbell, Sagan, Kirby, Moore, Lennon,<br>
+           Pessoa, Tanenbaum, Kernighan and Ritchie</p>
+        <br>
         <p>computer scientist, IT specialist, development leader</p>
-        <br />
-        <p>brazilian by birth, portuguese/italian by blood, visited 24 countries</p>
+        <br>
+        <p></p>brazilian by birth, portuguese/italian by blood, visited 24 countries</p>       
         <div class="flags">
-          <img src="https://flagcdn.com/no.svg" alt="Norway" />
-          <img src="https://flagcdn.com/fi.svg" alt="Finland" />
-          <img src="https://flagcdn.com/se.svg" alt="Sweden" />
-          <img src="https://flagcdn.com/dk.svg" alt="Denmark" />
-          <img src="https://flagcdn.com/pt.svg" alt="Portugal" />
-          <img src="https://flagcdn.com/es.svg" alt="Spain" />
-          <img src="https://flagcdn.com/fr.svg" alt="France" />
-          <img src="https://flagcdn.com/gb.svg" alt="United Kingdom" />
-          <img src="https://flagcdn.com/de.svg" alt="Germany" />
-          <img src="https://flagcdn.com/it.svg" alt="Italy" />
-          <img src="https://flagcdn.com/lu.svg" alt="Luxembourg" />
-          <img src="https://flagcdn.com/nl.svg" alt="Netherlands" />
-        </div>
-        <div class="flags">
-          <img src="https://flagcdn.com/ch.svg" alt="Switzerland" />
-          <img src="https://flagcdn.com/va.svg" alt="Vatican" />
-          <img src="https://flagcdn.com/us.svg" alt="USA" />
-          <img src="https://flagcdn.com/ca.svg" alt="Canada" />
-          <img src="https://flagcdn.com/mx.svg" alt="Mexico" />
-          <img src="https://flagcdn.com/pe.svg" alt="Peru" />
-          <img src="https://flagcdn.com/py.svg" alt="Paraguay" />
-          <img src="https://flagcdn.com/ar.svg" alt="Argentina" />
-          <img src="https://flagcdn.com/uy.svg" alt="Uruguay" />
-          <img src="https://flagcdn.com/cl.svg" alt="Chile" />
-          <img src="https://flagcdn.com/in.svg" alt="India" />
-          <img src="https://flagcdn.com/br.svg" alt="Brazil" />
+          <img src="https://flagcdn.com/no.svg" alt="Norway">
+          <img src="https://flagcdn.com/fi.svg" alt="Finland">
+          <img src="https://flagcdn.com/se.svg" alt="Sweden">
+          <img src="https://flagcdn.com/dk.svg" alt="Denmark">
+          <img src="https://flagcdn.com/pt.svg" alt="Portugal">
+          <img src="https://flagcdn.com/es.svg" alt="Spain">
+          <img src="https://flagcdn.com/fr.svg" alt="France">
+          <img src="https://flagcdn.com/gb.svg" alt="United Kingdom">
+          <img src="https://flagcdn.com/de.svg" alt="Germany">
+          <img src="https://flagcdn.com/it.svg" alt="Italy">
+          <img src="https://flagcdn.com/lu.svg" alt="Luxembourg">
+          <img src="https://flagcdn.com/nl.svg" alt="Netherlands">
+        </div><div class="flags">
+          <img src="https://flagcdn.com/ch.svg" alt="Switzerland">
+          <img src="https://flagcdn.com/va.svg" alt="Vatican">
+          <img src="https://flagcdn.com/us.svg" alt="USA">
+          <img src="https://flagcdn.com/ca.svg" alt="Canada">
+          <img src="https://flagcdn.com/mx.svg" alt="Mexico">
+          <img src="https://flagcdn.com/pe.svg" alt="Peru">
+          <img src="https://flagcdn.com/py.svg" alt="Paraguay">
+          <img src="https://flagcdn.com/ar.svg" alt="Argentina">
+          <img src="https://flagcdn.com/uy.svg" alt="Uruguay">
+          <img src="https://flagcdn.com/cl.svg" alt="Chile">
+          <img src="https://flagcdn.com/in.svg" alt="India">
+          <img src="https://flagcdn.com/br.svg" alt="Brazil">
         </div>
       </div>
     </div>
 
     <div class="right">
       <section>
-        <blockquote>"The privilege of a lifetime is being who you are."<br />– Joseph Campbell</blockquote>
+        <blockquote>"The privilege of a lifetime is being who you are."<br>– Joseph Campbell</blockquote>
         <a href="https://facebook.com/fabio.marques" target="_blank">facebook</a>
       </section>
 
       <section>
-        <blockquote>“Navegar é preciso; viver não é preciso.“<br />– Fernando Pessoa</blockquote>
+        <blockquote>“Navegar é preciso; viver não é preciso.“<br>– Fernando Pessoa</blockquote>
         <a href="https://instagram.com/farm1974world" target="_blank">instagram</a>
         <a href="https://nomadmania.com/profile/40971/" target="_blank">nomadmania</a>
         <a href="https://www.tripadvisor.com/Profile/farm1974world" target="_blank">tripadvisor</a>
       </section>
 
       <section>
-        <blockquote>"Believe you can and you're halfway there."<br />– Theodore Roosevelt</blockquote>
+        <blockquote>"Believe you can and you're halfway there."<br>– Theodore Roosevelt</blockquote>
         <a href="https://linkedin.com/in/farm1974" target="_blank">linkedin</a>
         <a href="https://linktr.ee/farm1974" target="_blank">linktree</a>
         <a href="https://www.scrumalliance.org/members/280956" target="_blank">scrum alliance</a>
-        <a href="https://www.credly.com/users/fabio-marques" target="_blank">credly</a>
-        <a href="https://www.github.com/farm1974" target="_blank">github</a>
-        <a href="https://www.linkedin.com/in/farm1974/detail/skills/" target="_blank">skills</a>
-        <a href="https://www.linkedin.com/in/farm1974/detail/certifications/" target="_blank">certifications</a>
+        <a href="https://www.credly.com/users/fabiomarques" target="_blank">credly</a>
+        <a href="https://coursera.org/user/fabiomarques1974" target="_blank">coursera</a>
       </section>
 
       <section>
-        <blockquote>"Do or do not. There is no try."<br />– Yoda</blockquote>
-        <a href="https://twitter.com/farm1974" target="_blank">twitter</a>
+        <blockquote>"Those who can imagine anything, can create the impossible."<br>– Alan Turing</blockquote>
+        <a href="https://github.com/FabioMarques1974" target="_blank">github</a>
+        <a href="https://developers.google.com/profile/u/farm1974" target="_blank">google developer</a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/42426002-7f57-4e7c-8403-87e12da59dcf" target="_blank">google cloud skills</a>
+        <a href="https://patents.google.com/patent/WO2023200378A1/en" target="_blank">patent WO2023200378A1</a>
+      </section>
+
+      <section>
+        <blockquote>"I look what Siegel and Shuster did, Superman is gonna live forever!"<br>– Jack Kirby</blockquote>
+        <a href="http://www.super-homem.com/" target="_blank">www.super-homem.com</a>
       </section>
     </div>
   </div>
