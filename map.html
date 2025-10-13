@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My World</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    #map { height: 100vh; width: 100%; }
+    img.popup-photo { width: 200px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    var map = L.map('map').setView([20, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    const places = [
+      { title: "Paris, France", lat: 48.8566, lng: 2.3522, image: "https://www.instagram.com/p/CDSSKyUJ6Wc/", caption: "Tour Eiffel" },
+      { title: "Oslo, Norway", lat: 59.911491, lnf 10.757933, image: "https://www.instagram.com/p/ChdzXOMMUYY/", caption: "Vigelandsanlegget" }
+    ];
+
+    places.forEach(p => {
+      const popupContent = `<strong>${p.title}</strong><br><img src="${p.image}" class="popup-photo"><br>${p.caption}`;
+      L.marker([p.lat, p.lng]).addTo(map).bindPopup(popupContent);
+    });
+  </script>
+</body>
+</html>
